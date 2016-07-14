@@ -1,0 +1,15 @@
+[
+  {
+    "ping": "sounds/comet.mp3",
+    "pong": "sounds/explode.mp3",
+    "delay": 2500
+  },{
+    "ping": "sounds/slap.mp3",
+    "pong": "sounds/cry.mp3",
+    "delay": 1800
+  },{
+    "ping": "sounds/takeoff.mp3",
+    "pong": "sounds/lend.mp3",
+    "delay": 5000
+  }
+]
