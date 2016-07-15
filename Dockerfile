@@ -9,6 +9,7 @@ RUN npm install -g n
 RUN n latest
 
 # myapp
+RUN apt-get install -y mpg321
 WORKDIR /usr/src/myapp
 ADD . /usr/src/myapp
 
