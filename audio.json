@@ -15,5 +15,9 @@
     "ping": "sounds/reload.mp3",
     "pong": "sounds/shoot.mp3",
     "delay": 1000
+  },{
+    "ping": "sounds/ping.mp3",
+    "pong": "sounds/pong.mp3",
+    "delay": 500
   }
 ]
