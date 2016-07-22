@@ -6,9 +6,10 @@
       margin: 0;
     }
     button {
-      width: 100%;
-      height: 100%;
-      font-size: 30vmin;
+      width: 40vmin;
+      height: 40vmin;
+      font-size: 11vmin;
+      margin: 5%;
     }
     iframe {
       width: 1px;
@@ -17,8 +18,23 @@
       position: absolute;
     }
   </style>
+  <script type="text/javascript">
+    var iframe;
+    function play(idx) {
+      iframe.src = '';
+      iframe.src = '/play/' + idx;
+    }
+    window.onload = function() {
+      iframe = document.getElementById('iframe');
+      for (idx=0; idx<5; idx++) {
+        var button = document.createElement('button');
+        button.onclick = play.bind(window, idx);
+        button.innerHTML = 'PING!';
+        document.body.appendChild(button);
+     }
+    }
+  </script>
 </head>
 <body>
-  <iframe src="/ping"></iframe>
-  <button onclick="window.location.reload()">PING</button>
+  <iframe id="iframe" src=""></iframe>
 </body></html>

@@ -31,9 +31,10 @@ var app = express();
 
 app.use('/', express.static('./'));
 
-app.get('/ping', function (req, res, next) {
+app.get('/play/:idx', function (req, res, next) {
+  console.log(req.params.idx, typeof(req.params.idx));
 
-  var chosen = getItems(audio, 1, 1)[0];
+  var chosen = audio[parseInt(req.params.idx)];// getItems(audio, 1, 1)[0];
 
   res.sendFile(__dirname + '/' + chosen.ping, function (err) {
     if (err) {
