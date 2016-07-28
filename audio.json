@@ -19,5 +19,9 @@
     "ping": "sounds/ping.mp3",
     "pong": "sounds/pong.mp3",
     "delay": 500
+  },{
+    "ping": "sounds/meow.mp3",
+    "pong": "sounds/mignon.mp3",
+    "delay": 500
   }
 ]
