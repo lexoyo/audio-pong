@@ -1,3 +1,4 @@
+# What is audio pong?
 
 This is a small nodejs server for your raspberry 3. 
 
@@ -12,16 +13,16 @@ on your raspberry, install these libs for audio and nodejs
 ```
 sudo apt-get update
 
-# nodejs
+# install nodejs
 sudo apt-get install -y npm wget
 sudo npm install -g n
 n latest
 
-# audio
+# setup audio
 sudo apt-get install -y mpg321
 ```
 
-then start the server
+then start the server (you can add [use these techniques to start the server on startup boot](http://raspberrywebserver.com/serveradmin/run-a-script-on-start-up.html))
 
 ```
 $ npm i
@@ -30,14 +31,20 @@ $ npm start
 
 then open `http://[raspberry IP]:8080` on your phone and enjoy the sound on the 2 devices
 
+## add sounds to the board
 
+You will need 2 mp3 sounds, one for ping (played by the phone) and one for pong (played by the raspberry)
 
+* add 2 sounds to the [`sounds/` folder](./sounds)
+* add an entry in [audio.json](./audio.json)
+* change the number of sounds in [`index.html` on this line here](https://github.com/lexoyo/audio-pong/blob/master/index.html#L29)
 
+Feel free to contribute your sounds here, only creative commons one please (home made or not) ;)
 
 ---
 ---
 
-#### Doccker
+#### Notes on Doccker
 
 $ sudo docker build . lexoyo/audio-pong
 $ sudo docker run -p 8080:8080 lexoyo/audio-pong
