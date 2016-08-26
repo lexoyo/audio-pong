@@ -31,6 +31,9 @@ $ npm start
 
 then open `http://[raspberry IP]:8080` on your phone and enjoy the sound on the 2 devices
 
+> tip: you may need to type `amixer cset numid=3 1` to force the raspberry to output audio on the "analog" output instead of hdmi
+> tip: you can use this command to test your audio: `speaker-test -t sine -f 440 -c 2 -s 1`
+
 ## add sounds to the board
 
 You will need 2 mp3 sounds, one for ping (played by the phone) and one for pong (played by the raspberry)
