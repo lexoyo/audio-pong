@@ -16,7 +16,7 @@ sudo apt-get update
 # install nodejs
 sudo apt-get install -y npm wget
 sudo npm install -g n
-n latest
+sudo n latest
 
 # setup audio
 sudo apt-get install -y mpg321
