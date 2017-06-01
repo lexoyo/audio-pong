@@ -4,7 +4,7 @@ This is a small nodejs server for your raspberry 3.
 
 It serves a sound board to your phone, you click on a tile to play a sound on you phone and another sound will be played on the raspberry, making a fun effect like ping pong, reload and fire, smash and cry...
 
-![Screenshot](Screenshot from 2016-08-02 12-54-24.png)
+![Screenshot](./Screenshot from 2016-08-02 12-54-24.png)
 
 ## Install on a raspberry 3
 
